@@ -20,6 +20,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/base_currency"
+                android:textColor="@color/material_on_background_disabled"
+                app:layout_constraintBottom_toBottomOf="@+id/sp_base_currency"
+                app:layout_constraintStart_toEndOf="@+id/sp_base_currency"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <Spinner
                 android:id="@+id/sp_base_currency"
                 android:layout_width="150dp"
@@ -83,6 +94,7 @@
 
     <Button
         android:layout_width="wrap_content"
+        android:id="@+id/btn_convert"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -111,6 +123,7 @@
             android:hint="@string/amount"
             android:inputType="numberDecimal"
             android:maxLines="1"
+            android:textColorHint="#757575"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
